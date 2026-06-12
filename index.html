@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cathode Arc &mdash; Retro-Inspired Games</title>
-    <meta name="description" content="Cathode Arc is an indie game studio crafting retro-inspired games with zero dependencies. Pure HTML5 Canvas, vanilla JavaScript, and handcrafted pixel art.">
+    <title>Cathode Arc &mdash; Web Games</title>
+    <meta name="description" content="Cathode Arc is an indie game studio building handcrafted browser games, including Terminal Zero, Mad Scientist's Laboratory, Genesis Block, and Currents.">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -55,17 +55,17 @@
     <section id="games" class="games">
         <h2 class="section-title">
             <span class="section-title-bracket">[</span>
-            OUR GAMES
+            CURRENT PROJECTS
             <span class="section-title-bracket">]</span>
         </h2>
 
         <div class="games-grid">
             <!-- Terminal Zero -->
-            <article class="game-card">
+            <article class="game-card accent-green">
                 <div class="game-card-inner">
                     <div class="game-screenshot-wrapper">
                         <img src="screenshots/terminal-zero.png" alt="Terminal Zero gameplay screenshot" class="game-screenshot" loading="lazy">
-                        <div class="game-badge badge-green">Coming Soon</div>
+                        <div class="game-badge badge-green">Launch Candidate</div>
                         <div class="screenshot-scanlines" aria-hidden="true"></div>
                     </div>
                     <div class="game-info">
@@ -87,11 +87,11 @@
             </article>
 
             <!-- Mad Scientist's Laboratory -->
-            <article class="game-card">
+            <article class="game-card accent-gold">
                 <div class="game-card-inner">
                     <div class="game-screenshot-wrapper">
                         <img src="screenshots/mad-scientist.png" alt="Mad Scientist's Laboratory gameplay screenshot" class="game-screenshot" loading="lazy">
-                        <div class="game-badge badge-gold">Coming Soon</div>
+                        <div class="game-badge badge-gold">Portal Candidate</div>
                         <div class="screenshot-scanlines" aria-hidden="true"></div>
                     </div>
                     <div class="game-info">
@@ -107,6 +107,56 @@
                             <span class="tech-tag">Procedural Art</span>
                             <span class="tech-tag">Tile Engine</span>
                             <span class="tech-tag">0 Dependencies</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Genesis Block -->
+            <article class="game-card accent-blue">
+                <div class="game-card-inner">
+                    <div class="game-screenshot-wrapper">
+                        <img src="screenshots/genesis-block.png" alt="Genesis Block prototype screenshot" class="game-screenshot" loading="lazy">
+                        <div class="game-badge badge-blue">Prototype</div>
+                        <div class="screenshot-scanlines" aria-hidden="true"></div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title title-blue">Genesis Block</h3>
+                        <p class="game-genre">// Systems RPG &middot; Idle Adventure</p>
+                        <p class="game-description">
+                            A retro computing mystery about cracking systems, exploring a connected
+                            world, and piecing together a personal history through terminals, NPCs,
+                            and research. Currently being scoped toward an Act 1 vertical slice.
+                        </p>
+                        <div class="game-tech">
+                            <span class="tech-tag">Canvas 2D</span>
+                            <span class="tech-tag">Save/Load</span>
+                            <span class="tech-tag">Prototype</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Currents -->
+            <article class="game-card accent-cyan">
+                <div class="game-card-inner">
+                    <div class="game-screenshot-wrapper">
+                        <img src="screenshots/currents-concept.png" alt="Currents concept placeholder" class="game-screenshot" loading="lazy">
+                        <div class="game-badge badge-cyan">Concept</div>
+                        <div class="screenshot-scanlines" aria-hidden="true"></div>
+                    </div>
+                    <div class="game-info">
+                        <h3 class="game-title title-cyan">Currents</h3>
+                        <p class="game-genre">// Future Concept</p>
+                        <p class="game-description">
+                            A parked design concept for a later production cycle. It stays in the
+                            backlog while Terminal Zero, Mad Scientist's Laboratory, and Genesis Block
+                            move through launch, portal testing, and vertical-slice polish.
+                        </p>
+                        <div class="game-tech">
+                            <span class="tech-tag">Design Doc</span>
+                            <span class="tech-tag">Backlog</span>
+                            <span class="tech-tag">Not Playable</span>
                         </div>
                     </div>
                 </div>
@@ -130,13 +180,12 @@
                 </p>
                 <p>
                     We build games the old-fashioned way: vanilla JavaScript, HTML5 Canvas,
-                    and the Web Audio API. No frameworks. No build tools. No node_modules folder
-                    the size of a black hole. Just clean, handcrafted code that runs in any browser.
+                    and the Web Audio API. Small portable projects, direct browser entry points,
+                    and handcrafted code that stays close to the machine.
                 </p>
                 <p>
-                    Every sprite is drawn procedurally. Every sound is synthesized in real time.
-                    Every game ships as two files&mdash;an HTML shell and a single JS file&mdash;because
-                    constraints breed creativity.
+                    The current slate spans a narrative terminal thriller, a compact lab adventure,
+                    a retro computing prototype, and one parked future concept.
                 </p>
             </div>
             <div class="about-stats">
@@ -145,12 +194,12 @@
                     <span class="stat-label">Dependencies</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">2</span>
-                    <span class="stat-label">Files per Game</span>
+                    <span class="stat-value">4</span>
+                    <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-value">100%</span>
-                    <span class="stat-label">Procedural Art</span>
+                    <span class="stat-value">3</span>
+                    <span class="stat-label">Playable Builds</span>
                 </div>
                 <div class="stat">
                     <span class="stat-value">&infin;</span>
@@ -178,7 +227,7 @@
                 </a>
             </div>
             <div class="footer-copyright">
-                <span class="terminal-prompt">&gt;</span> &copy; 2025 Cathode Arc. All rights reserved.
+                <span class="terminal-prompt">&gt;</span> &copy; 2026 Cathode Arc. All rights reserved.
             </div>
             <div class="footer-colophon">
                 Built with <span class="highlight-green">&lt;canvas&gt;</span>,

@@ -17,6 +17,12 @@
     --gold: #FFD700;
     --gold-dim: rgba(255, 215, 0, 0.4);
     --gold-glow: rgba(255, 215, 0, 0.15);
+    --blue: #58A6FF;
+    --blue-dim: rgba(88, 166, 255, 0.4);
+    --blue-glow: rgba(88, 166, 255, 0.15);
+    --cyan: #2DD4BF;
+    --cyan-dim: rgba(45, 212, 191, 0.4);
+    --cyan-glow: rgba(45, 212, 191, 0.15);
     --bg: #0a0a0a;
     --bg-card: #0d1117;
     --bg-card-hover: #111820;
@@ -325,6 +331,14 @@ body {
     transition-delay: 0.2s;
 }
 
+.game-card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.game-card:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
 .game-card.visible {
     opacity: 1;
     transform: translateY(0);
@@ -339,15 +353,27 @@ body {
     height: 100%;
 }
 
-.game-card:first-child .game-card-inner:hover {
+.game-card.accent-green .game-card-inner:hover {
     border-color: var(--green-dim);
     box-shadow: 0 0 30px var(--green-glow), 0 8px 32px rgba(0, 0, 0, 0.4);
     transform: translateY(-4px);
 }
 
-.game-card:last-child .game-card-inner:hover {
+.game-card.accent-gold .game-card-inner:hover {
     border-color: var(--gold-dim);
     box-shadow: 0 0 30px var(--gold-glow), 0 8px 32px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+.game-card.accent-blue .game-card-inner:hover {
+    border-color: var(--blue-dim);
+    box-shadow: 0 0 30px var(--blue-glow), 0 8px 32px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+.game-card.accent-cyan .game-card-inner:hover {
+    border-color: var(--cyan-dim);
+    box-shadow: 0 0 30px var(--cyan-glow), 0 8px 32px rgba(0, 0, 0, 0.4);
     transform: translateY(-4px);
 }
 
@@ -414,6 +440,20 @@ body {
     box-shadow: 0 0 10px var(--gold-glow);
 }
 
+.badge-blue {
+    background: rgba(88, 166, 255, 0.15);
+    color: var(--blue);
+    border: 1px solid var(--blue-dim);
+    box-shadow: 0 0 10px var(--blue-glow);
+}
+
+.badge-cyan {
+    background: rgba(45, 212, 191, 0.15);
+    color: var(--cyan);
+    border: 1px solid var(--cyan-dim);
+    box-shadow: 0 0 10px var(--cyan-glow);
+}
+
 /* Game info */
 .game-info {
     padding: 1.5rem;
@@ -433,6 +473,16 @@ body {
 .title-gold {
     color: var(--gold);
     text-shadow: 0 0 10px var(--gold-glow);
+}
+
+.title-blue {
+    color: var(--blue);
+    text-shadow: 0 0 10px var(--blue-glow);
+}
+
+.title-cyan {
+    color: var(--cyan);
+    text-shadow: 0 0 10px var(--cyan-glow);
 }
 
 .game-genre {
@@ -465,14 +515,24 @@ body {
     transition: border-color 0.3s, color 0.3s;
 }
 
-.game-card:first-child .game-card-inner:hover .tech-tag {
+.game-card.accent-green .game-card-inner:hover .tech-tag {
     border-color: var(--green-dim);
     color: var(--green);
 }
 
-.game-card:last-child .game-card-inner:hover .tech-tag {
+.game-card.accent-gold .game-card-inner:hover .tech-tag {
     border-color: var(--gold-dim);
     color: var(--gold);
+}
+
+.game-card.accent-blue .game-card-inner:hover .tech-tag {
+    border-color: var(--blue-dim);
+    color: var(--blue);
+}
+
+.game-card.accent-cyan .game-card-inner:hover .tech-tag {
+    border-color: var(--cyan-dim);
+    color: var(--cyan);
 }
 
 /* ── About Section ───────────────────────────────────────────── */
