@@ -379,10 +379,17 @@ body {
 
 /* Screenshot wrapper */
 .game-screenshot-wrapper {
+    display: block;
     position: relative;
     overflow: hidden;
     aspect-ratio: 4 / 3;
     background: #000;
+    color: inherit;
+    text-decoration: none;
+}
+
+.game-screenshot-link {
+    cursor: pointer;
 }
 
 .game-screenshot {
@@ -454,6 +461,29 @@ body {
     box-shadow: 0 0 10px var(--cyan-glow);
 }
 
+.game-play-ribbon {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+    padding: 0.55rem 0.9rem;
+    background: var(--green);
+    color: #001807;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    box-shadow: 0 0 24px var(--green-glow), 0 0 8px rgba(0, 255, 65, 0.35);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.game-screenshot-link:hover .game-play-ribbon,
+.game-screenshot-link:focus-visible .game-play-ribbon {
+    background: #8CFFAA;
+    box-shadow: 0 0 32px rgba(0, 255, 65, 0.35), 0 0 12px rgba(0, 255, 65, 0.5);
+}
+
 /* Game info */
 .game-info {
     padding: 1.5rem;
@@ -509,11 +539,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 }
 
 .game-link {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 38px;
@@ -529,6 +560,27 @@ body {
     transition: border-color 0.3s, color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
+.game-link-primary {
+    width: 100%;
+    min-height: 58px;
+    background: rgba(0, 255, 65, 0.12);
+    border-width: 2px;
+    box-shadow: 0 0 18px rgba(0, 255, 65, 0.08), inset 0 0 20px rgba(0, 255, 65, 0.05);
+}
+
+.game-link-main {
+    font-size: 0.95rem;
+    line-height: 1.1;
+    letter-spacing: 0.14em;
+}
+
+.game-link-sub {
+    margin-top: 0.25rem;
+    color: var(--text-dim);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+}
+
 .game-link:hover {
     background: rgba(255, 255, 255, 0.03);
 }
@@ -539,7 +591,13 @@ body {
 }
 
 .link-green:hover {
-    box-shadow: 0 0 18px var(--green-glow), inset 0 0 18px var(--green-glow);
+    background: var(--green);
+    color: #001807;
+    box-shadow: 0 0 28px rgba(0, 255, 65, 0.25), inset 0 0 18px rgba(255, 255, 255, 0.18);
+}
+
+.link-green:hover .game-link-sub {
+    color: #003412;
 }
 
 .tech-tag {
