@@ -505,6 +505,43 @@ body {
     gap: 0.5rem;
 }
 
+.game-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.game-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.game-link:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.link-green {
+    border-color: var(--green-dim);
+    color: var(--green);
+}
+
+.link-green:hover {
+    box-shadow: 0 0 18px var(--green-glow), inset 0 0 18px var(--green-glow);
+}
+
 .tech-tag {
     font-size: 0.65rem;
     padding: 0.2rem 0.6rem;
